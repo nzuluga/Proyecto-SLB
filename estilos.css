@@ -5,3 +5,22 @@ body {
 
   background-color: rgb(255, 255, 255); /* Si la imagen no esta disponible */
 }
+
+
+h1 {
+    /*Estilos para los titulos tipo h1*/
+    font-family: Times New Roman;
+    text-align: center;
+    text-shadow: 1px 1px rgb(0, 51, 102);
+    text-align: center;
+    font-size: 40px;
+    color: rgb(20, 51, 102);
+    margin: auto;
+    width: 80%;
+    max-width: 600px; /* ancho máximo del párrafo */
+    padding: -1000px 0px 0px 200px; /* arriba, derecha, abajo, izquierda */
+    }
+
+
+
+
