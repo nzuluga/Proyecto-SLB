@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+body {
+  /* los estilos aplicados a una etiqueta valen para todos los casos */
+
+  background-color: rgb(255, 255, 255); /* Si la imagen no esta disponible */
+}
