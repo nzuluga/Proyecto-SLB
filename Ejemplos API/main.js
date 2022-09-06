@@ -1,10 +1,5 @@
-console.log=('Hola Mundo')
+function captura(){
+    var nombreest=document.getElementById("nomest").value; 
+    alert(nombreest)
 
-const URL = 'https://api.thecatapi.com/v1/images/search';
-
-fetch(URL)
-    .then(res=> res.json())
-    .then(data =>{
-        const img = document.querySelector('img');
-        img.src = data[0].URL;
-    });
+}
