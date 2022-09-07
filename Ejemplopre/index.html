@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> Pagina ensamble motores  </h1>
+    <p></p>
+
+        <span>Longitud y Calibre (MPI 51102)</span>
+            <select name="select" id="select">
+                <option value="">Standard</option>
+                <option value="">Especial</option>
+            </select> 
+            <br>
+        <span>Revisar BOM</span>
+            <input type="checkbox" id="checkbox1" name="checkbox">
+            <br/>
+        <span>Verificado encabezado y CAA</span>
+            <input type="checkbox" id="checkbox2" name="checkbox">
+            <br/>
+        <span>Verificada longitud del Estator vs Plano</span>  
+            <input type="text" id="Estator1" name="Estator">
+            <br/>
+        <h4>Verificado la orientación del Estator:</h4>
+            <span>Base (distancia) </span>
+            <input type="text" id="Nombre1" name="Nombre">
+        <br/>
+
+        <button type="button" onclick="captura3()">capturar datos</button>
+
+        <script type="text/javascript" src="servidor.js"></script>
+    <h2>Tabla de resultados</h2>
+        
+
+<!forma para constuir una tabla>
+    
+    
+    <table id="resultados">
+        <tr>
+            <th>BOM</th>
+            <th>Texto estator</th> 
+            <th>base</th>            
+        </tr>
+
+    </body>
+</html>
