@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="estilos.css" rel="stylesheet" type="text/css">
+    <script src="table2excel.js"> </script>
     <title>Document</title>
 </head>
 <body>
@@ -33,29 +34,60 @@
         <br/>
 
         <button type="button" onclick="captura3()">capturar datos</button>
-
-        <script type="text/javascript" src="servidor.js"></script>
-        <script lang="javascript" src="https://cdn.sheetjs.com/xlsx-0.18.11/package/dist/xlsx.full.min.js">
-const worksheet = XLSX.utils.json_to_sheet(rows);
+       
 
 
-
-
-
-
-        </script>
+        
     <h2>Tabla de resultados</h2>
         
 
 <!forma para constuir una tabla>
-    
-    
+
     <table id="resultados">
         <tr>
             <th>BOM</th>
             <th>Texto estator</th> 
             <th>base</th>            
         </tr>
+        <script type="text/javascript" src="servidor.js"></script>
+
+
+        <button  id="downloadexcel">descargar excel</button>
+
+        <style>
+            table,tr,th,td {
+                border: 1px solid black;
+                width: 50%;
+                text-align: left;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+            
+                </style>
+                <br>
+
+        <table id="tabla">
+            <tr>
+                <td>Nombre</td>
+                <td>Apellido</td>
+            </tr>
+            <tr>
+                <td>Nombre</td>
+                <td>Apellido</td>
+            </tr>
+        </table>
+        
+        <button id="downloadexcel">export to Excel</button>
+            <script>
+                document.getElementById("downloadexcel").addEventListener('click',function(){
+                    var table2excel = new Table2Excel();
+                    table2excel.export(document.querySelectorAll("#tabla"));
+        
+                });
+        
+        
+            </script>
 
     </body>
 </html>
