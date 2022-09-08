@@ -17,10 +17,6 @@ function captura3(){
   var checkbox2 = document.getElementById("checkbox2").checked;
   var select1 = document.getElementById("select1").value;
   var selectanimales = document.getElementById("select1");
-  alert(texto1)
-  alert(texto2)
-  alert(checkbox2)
-  alert(select1)
   //console.log(select1)
 
 
@@ -49,17 +45,10 @@ function captura3(){
     productos[0].LonCa='Especial'
   }
 
-
-
-  productos[0].estator=texto1
-  productos[0].base=texto2
+  productos[0].estator=texto1;
+  productos[0].base=texto2;
   
   
-  
-
-
-  
-  //productos[0].bom=checkbox1
 
   let tablaProducto = document.getElementById('tabla');
   let cuerpoTabla = document.createElement('tbody');
