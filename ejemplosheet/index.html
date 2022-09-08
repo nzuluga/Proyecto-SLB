@@ -52,6 +52,8 @@ table,tr,th,td {
 }
 
     </style>
+
+<div id='element'>
 <table id="tabla">
     <tr>
         <td>BOM</td>
@@ -62,11 +64,20 @@ table,tr,th,td {
     </tr>
     
 </table>
-
+</div>
 <button id="downloadexcel">export to Excel</button>
+
+
+     
+    <div>first content</div>
+    <! este div nos permite realizar un cambio de Pagina>
+    <div class="html2pdf__page-break"></div>
+    <div>second content</div>
     
 
+<button type="button" onclick="pdf()">pdf</button>
 
 <script type="text/javascript" src="servidor.js"></script>
+<script src="html2pdf.bundle.min.js"></script>
 </body>
 </html>

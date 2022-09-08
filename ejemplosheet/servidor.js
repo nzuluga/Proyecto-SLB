@@ -83,3 +83,8 @@ function captura3(){
 tablaProducto.appendChild(cuerpoTabla)
 
 }
+
+var element = document.getElementById('element')
+    function pdf(){
+        html2pdf(element)
+    }
