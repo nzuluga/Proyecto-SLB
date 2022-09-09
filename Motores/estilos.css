@@ -3,7 +3,7 @@
 body {
   /* los estilos aplicados a una etiqueta valen para todos los casos */
 
- /* background-color: rgb(255, 255, 255); /* Si la imagen no esta disponible */
+  background-color: rgb(255, 255, 255); /* Si la imagen no esta disponible */
 }
 
 
@@ -65,12 +65,14 @@ h1 {
     
 
 
-    .table {
+    table,tr,th,td {
       border: 1px solid black;
-      width: 50%;
+      width: 80%;
       text-align: left;
       margin-left: auto;
       margin-right: auto;
-    }
-
+      
+  }
+  
+    
 
