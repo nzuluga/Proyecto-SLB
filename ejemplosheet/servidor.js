@@ -49,7 +49,6 @@ function captura3(){
   productos[0].base=texto2;
   
   let fechaActual = new Date();
-  alert(fechaActual);
   productos[0].hora=fechaActual;
 
   let tablaProducto = document.getElementById('tabla');
