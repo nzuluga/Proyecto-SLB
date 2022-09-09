@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hekclist Ensamble - Motor Maximus 456</title>
+    <title>hekclist Ensamble - Motor Maximus 456 parte 2
+    </title>
     <link href="estilos.css" rel="stylesheet" type="text/css">
     <script src="table2excel.js"  > </script>
   
 </head>
 <body>
 
-    <h1> Chekclist Ensamble - Motor Maximus 456  </h1>
+    <h1> Chekclist Ensamble - Motor Maximus 456 parte 2 </h1>
     <p></p>
 
     <ul class="menu">
         <!Referencia de la página y nombre del boton >
         <li><a class=botonmenu  href="../index.html" target="_self">INICIO</a> </li>
-        <li><a  href="Parte 1.html" target="_self">PARTE 1</a> </li>
-        <li><a  href="Parte 2.html" target="_self">PARTE 2</a></li>
-        <li><a  href="Parte 3.html" target="_self">PARTE 3</a></li> 
+         
     </ul>
         <br><br>
         <span>Revisar BOM</span>
@@ -43,9 +42,22 @@
             </select> 
             <br>
     
+<a href="Parte 1.html">
+    <button> Atras </button>
+</a>
+
+<a href="Parte 3.html">
+    <button type="button" > Siguiente </button>
+</a>
+
+
+
+
 
  <br>
     <button type="button" onclick="captura3()">capturar datos</button>
+
+
 
 
 <br>
@@ -84,8 +96,269 @@ table,tr,th,td {
     <br>
 
 <button type="button" onclick="pdf()">Export pdf</button>
+<br>
+
+
+
+
 
 <script type="text/javascript" src="servidor.js"></script>
 <script src="html2pdf.bundle.min.js"></script>
+
+
+
+
+
+
+<br><br><br>
+<form>
+        
+    <h4>Partes</h4>  
+    <span>Revisar BOM</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br/>
+    <span>Verificado encabezado y CAA</span>
+    <input type="checkbox" id="checkbox" name="checkbox">
+    <br/>
+    <span>Verificada longitud del Estator vs Plano</span>  
+    <input type="text" id="Estator" name="Estator">
+    <br/>
+    <h4>Verificado la orientación del Estator:</h4>
+    <span>Base (distancia) </span>
+    <input type="text" id="Nombre" name="Nombre">
+    <br/>
+    <span>Cabeza (distancia) </span>
+    <input type="text" id="Nombre" name="Nombre">
+    <br/>
+    <h4>Revisión Estator y SN en Cabeza</h4>
+    <span>P/N </span>
+        <input type="text" id="Nombre" name="Nombre">
+        <br/>
+    <span>S/N<span>
+        <input type="text" id="Nombre" name="Nombre">
+        <br/>
+    <span>Verificación del estator con la galga (stator check bar)</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br/>
+    <h4>Prueba Eléctrica Estator (QAI&TI 2025)</h4>
+    <h5>F-F</h5>
+    <span>AB<span>
+        <input type="text" id="Nombre" name="Nombre">
+        <br/>
+    <span>BC<span>
+        <input type="text" id="Nombre" name="Nombre">
+        <br/>
+    <span>AC<span>
+        <input type="text" id="Nombre" name="Nombre">
+        <br/>
+    <h5>Aislamiento (Megger)</h5>
+    <span>V<span>
+        <input type="text" id="Nombre" name="Nombre">
+        <br/>
+    <span>Mili ohm <span>
+        <input type="text" id="Nombre" name="Nombre">
+        <br/>
+    <span>Micro Amperio<span>
+        <input type="text" id="Nombre" name="Nombre">
+        <br/>
+        <br/>
+    
+    <span>Alienación Motor (MPI 59125)</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br/>
+    <span>Limpieza de Eje</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br/>
+    <span>Limpieza de partes/ galga rotores</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br/>
+        <br/>
+    <span>Longitud y Calibre (MPI 51102)</span>
+    <select name="select" id="select">
+        <option value="">Standard</option>
+        <option value="">Especial</option>
+    </select>      
+    <span>#</span>
+    <input type="text" id="Nombre" name="Nombre">
+    <br/>
+    <span>Soldadura puntas (MPI 51102)</span>
+    <select name="select" id="select">
+        <option value="">High temp</option>
+        <option value="">Regular</option>
+    </select>  
+    <br>
+    <span>Marcas de las fases (ED-102)</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br/>
+
+    <span>Pruebo wire yellow (S-LT)<span>
+        <input type="text" id="Nombre" name="Nombre">
+        <br/>
+    <span>Pruebo termocupla (S-LT) y lectura<span>
+        <input type="text" id="Nombre" name="Nombre">
+        <br/>
+    <span>Continuidad de fases (UT-CT)</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br/>
+    <span>Ensamble conjunto rotórico (MPI 51132)<span>
+        <input type="text" id="Nombre" name="Nombre">
+        <br/>
+    <span>Rotor bearing libre de rebaba y SLK</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br/>
+    <span> Giro libre del eje</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br/>
+    
+    <br>
+    <h4>Prueba Eléctrica Estator (QAI&TI 2025)</h4>
+    
+    <span> Cabeza</span>
+    <select name="select" id="select">
+        <option value="">Aflas</option>
+        <option value="">Viton</option>
+        <option value="">HSN</option>
+    </select> 
+    <br>
+    <br>
+    <span>Base</span>
+    <select name="select" id="select">
+        <option value="">Aflas</option>
+        <option value="">Viton</option>
+        <option value="">HSN</option>
+    </select>  
+    <h5>Torque de Uniones (ED-184)</h5>
+    <span> Cabeza:200 lbs/ft</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        
+    <span> Base :200 lbs/ft</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br/><br>
+     <span>Thrust bearing</span>
+        <select name="select" id="select">
+            <option value="">HL</option>
+            <option value="">KTB</option>
+            <option value="">NTB</option>
+        </select>
+    <span>Coupling numero</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br/><br>
+    <h4>Medida final eje (ED-103)</h4>
+        <span>End Play</span>
+        <input type="text" id="Nombre" name="Nombre">
+        <span>Female</span>
+        <input type="text" id="Nombre" name="Nombre">
+        <span>Marce term. dominator</span>
+        <input type="text" id="Nombre" name="Nombre">
+        <br/><br>
+    <span>Instalación de terminales (MEPI51109-51190)</span>
+        <select name="select" id="select">
+            <option value="">Male</option>
+            <option value="">Female</option>
+            <option value="">Mrca term. Dominator</option>
+        </select>
+        <br>
+    <span> Instalación Block Terminal (MPI-51111)</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br/><br>
+    <span>Manufactura Misceláneos (D&F, Tornilleria y Plugs)</span>
+        <select name="select" id="select">
+            <option value="">Monel</option>
+            <option value="">Steel</option>
+        </select>
+        <br>
+    <span> Torque valvulas D&F (ED119) (MPI-51111)</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br/><br>
+    <span> Torque plugs / Tornillos</span>
+        <input type="text" id="checkbox" name="checkbox">
+        <br/><br>
+    <span> Instalacion nameplate</span>
+        <input type="text" id="checkbox" name="checkbox">
+        <br/><br>
+    <h4> Tipo de sensor</h4>
+    <span>Manufactura Misceláneos (D&F, Tornilleria y Plugs)</span>
+        <select name="select" id="select">
+            <option value="">Tipo 1</option>
+            <option value="">Capilar alineado con MLE</option>
+            <option value="">Tipo 0</option>
+        </select>
+        <br><br>
+    <span> SN</span>
+        <input type="text" id="checkbox" name="checkbox">
+        <br/><br>
+    <span> PN</span>
+        <input type="text" id="checkbox" name="checkbox">
+        <br/><br>
+     
+    <h4> MIST (QAUITI-2010)</h4>
+    <span> Fecha:</span>
+        <input type="text" id="checkbox" name="checkbox">
+        
+    <span> Hora:</span>
+        <input type="text" id="checkbox" name="checkbox">
+        <br/><br>
+       
+    <h4> Medidas del sensor</h4>
+    <span> Pi:</span>
+        <input type="text" id="checkbox" name="checkbox">
+    
+    <span> Pd:</span>
+        <input type="text" id="checkbox" name="checkbox">
+       
+    <span>Ti:</span>
+        <input type="text" id="checkbox" name="checkbox">
+    
+    <span> Tm:</span>
+        <input type="text" id="checkbox" name="checkbox">
+        <br/><br>
+    <span>Secuencia de fases </span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br/><br>
+
+    <span>Prueba de aire / vacio (ED-149 / ED-192</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br/><br>
+    <span> Dielectricidad del aceite (QAI&TI 2023)</span>
+        <input type="text" id="checkbox" name="checkbox">
+        <span> Kv</span>
+        <br/><br>
+        <h4> Inspección de motor</h4>
+        <span>Plugs</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        
+    <span>Couplings</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        
+    <span>PVC Spacer</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        
+    <span>Gasket</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        
+    <span>D/F M.</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+
+    <span>Condición soldadura (ED 174)</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br><br>
+    <span>Pintura</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br>
+    <h4> Aislamiento (Motor-Sensor a 1000V)</h4>
+    <span>Aislamiento</span>
+        <input type="text" id="checkbox" name="checkbox">
+        <span> Ohms</span>
+  <h4>Inspección final</h4>
+  <span>Fecha</span>
+  <input type="text" id="checkbox" name="checkbox">
+  <span>Hora</span>
+  <input type="text" id="checkbox" name="checkbox">
+        
+
+
+        <input type="submit" id="Enviar" value="Enviar" name="Enviar">
+ 
+</form>
 </body>
 </html>
