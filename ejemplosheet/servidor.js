@@ -21,7 +21,7 @@ function captura3(){
 
 
   // se crea un objecto que tiene todos los resultados  
-  productos[0] = {estator: 1, bom:'' , caa:'', base:'',LonCa:''};
+  productos[0] = {hora:"",estator: 1, bom:'' , caa:'', base:'',LonCa:''};
   
   let valuetexto = selectanimales.options[selectanimales.selectIndex]
   
@@ -48,18 +48,27 @@ function captura3(){
   productos[0].estator=texto1;
   productos[0].base=texto2;
   
-  
+  let fechaActual = new Date();
+  alert(fechaActual);
+  productos[0].hora=fechaActual;
 
   let tablaProducto = document.getElementById('tabla');
   let cuerpoTabla = document.createElement('tbody');
 
   productos.forEach(p=>{
-        let fila = document.createElement('tr');
+    
+    
+    
+    let fila = document.createElement('tr');
 
       let td = document.createElement('td');
-      td.innerText = p.bom;
+      td.innerText = p.hora;
       fila.appendChild(td);
 
+      td = document.createElement('td');
+      td.innerText = p.bom;
+      fila.appendChild(td)
+      
       td = document.createElement('td');
       td.innerText = p.caa;
       fila.appendChild(td)
